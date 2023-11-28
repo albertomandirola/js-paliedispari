@@ -18,18 +18,10 @@ function isPalindroma(word){
 }
 //dichiaro la variabile parola che mi permettera di chidere all utente la parola da verificare
 let parola = prompt('inserire una parola')
-//applico la funzione con la variabile parola scelta dall'utente
+//applico un if sulla funzione per il messaggio di avviso
 if( isPalindroma(parola)){
     alert('la parola e\' palindroma')
 }
 else{
     alert('la parola non e\' palindroma')
 }
-
-
-
-
-
-
-
-
