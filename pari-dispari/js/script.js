@@ -43,15 +43,16 @@ do{
         flag = false
     }
 }while(flag)
+//dichiaroed le seguenti variabili al cui valore do il risultato delle funzioni preceddenti
 let pcNumber = randomNumber()
+let numberIsEven = isEven(pcNumber,playerNumber)
 console.log(pcNumber)
 console.log(playerNumber)
-let numberIsEven = isEven(pcNumber,playerNumber)
 console.log(isEven)
-
+//faccio un controllo con le varie condizioni per decidere chi ha vinto
 if((choice == 'pari' && numberIsEven)||(choice == 'dispari' && !numberIsEven)){
     alert('hai vinto')
 }
 else{
-    alert('ha vinto il pc')
+    alert(`il pc ha scelto ${pcNumber} ha vinto il pc`)
 }
